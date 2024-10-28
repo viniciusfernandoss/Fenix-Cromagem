@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fênix Cromagem</title>
+    <link rel="shortcut icon" href="icons/img-favicon.png" type="image/x-icon">
 
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -31,7 +32,7 @@
                         Barra de contatos e informações
         ==================================================================
         -->
-        <section class="bg-info-bar d-none d-lg-block">
+        <section class="bg-info-bar d-none d-lg-block" id="headerr">
             <div class="container py-2" id="info-bar">
                 <div class="content-info-bar d-flex justify-content-between">
                     <div class="contato-info-bar d-flex align-items-center">
@@ -68,7 +69,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Início</a>
+                            <a class="nav-link" href="#headerr">Início</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#servicos">Serviços</a>
@@ -1098,17 +1099,174 @@
                                 Depoimento
         ==================================================================
         -->
-        <section class="bg-feedback" id="feedback">
-            <div class="container">
-                
-            </div>
+        <section class="bg-feedback py-5" id="feedback">
+            <div class="container py-5">
+
+                <div class="titulos-feedback mb-5">
+                    <h2 class="titulo1-feedback text-center m-0 p-0">
+                        FEEDBACK
+                    </h2>
+                    <h3 class="titulo2-feedback text-center">
+                        Depoimentos dos Clientes
+                    </h3>
+                </div>
+
+                <div class="swiper swiper-feedback">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="content-card-feedback d-flex flex-column justify-content-between py-3 px-4 rounded-4">
+                                <div class="cliente d-flex align-items-center">
+                                    <img src="img/foto-cliente1-feedback.webp" alt="Cliente" class="me-3">
+                                    <h2>
+                                        José<br> Carlos
+                                    </h2>
+                                </div>
+                                <div class="avaliacao px-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illo hic, nam architecto ad, possimus ab culpa sint magnam libero ipsam perferendis ullam quos neque alias assumenda quisquam dolorum enim.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="content-card-feedback d-flex flex-column justify-content-between py-3 px-4 rounded-4">
+                                <div class="cliente d-flex align-items-center">
+                                    <img src="img/foto-cliente2-feedback.webp" alt="Cliente" class="me-3">
+                                    <h2>
+                                        Maria<br> Karla
+                                    </h2>
+                                </div>
+                                <div class="avaliacao px-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illo hic, nam architecto ad, possimus ab culpa sint magnam libero ipsam perferendis ullam quos neque alias assumenda quisquam dolorum enim.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="content-card-feedback d-flex flex-column justify-content-between py-3 px-4 rounded-4">
+                                <div class="cliente d-flex align-items-center">
+                                    <img src="img/foto-cliente3-feedback.webp" alt="Cliente" class="me-3">
+                                    <h2>
+                                        Fernando<br> Souza
+                                    </h2>
+                                </div>
+                                <div class="avaliacao px-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illo hic, nam architecto ad, possimus ab culpa sint magnam libero ipsam perferendis ullam quos neque alias assumenda quisquam dolorum enim.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="content-card-feedback d-flex flex-column justify-content-between py-3 px-4 rounded-4">
+                                <div class="cliente d-flex align-items-center">
+                                    <img src="img/foto-cliente4-feedback.webp" alt="Cliente" class="me-3 cliente4">
+                                    <h2>
+                                        Luiz<br> Vinicius
+                                    </h2>
+                                </div>
+                                <div class="avaliacao px-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illo hic, nam architecto ad, possimus ab culpa sint magnam libero ipsam perferendis ullam quos neque alias assumenda quisquam dolorum enim.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="slider-wrapper-btn swiper-button-prev"></div>
+                    <div class="slider-wrapper-btn swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>  
         </section>
     </main>
 
 
 
-    <footer>
+    <footer class="py-5">
+        <!-- 
+        ==================================================================
+                                Footer Menu
+        ==================================================================
+        -->
+        <div class="container mb-5" id="footer-menu">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="content1-footer-menu text-center text-lg-start mb-5 mb-lg-0">
+                        <ul class="m-0 p-0">
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#Sobre">Sobre</a></li>
+                            <li><a href="#perguntasErespostas">Perguntas</a></li>
+                            <li><a href="#feedback">Depoimentos</a></li>
+                            <li><a href="#footer-menu">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="content2-footer-menu text-center text-lg-start mb-5 mb-lg-0">
+                        <h2>
+                            Telefone
+                        </h2>
+                        <p>
+                            (81) 9 8771-7205
+                        </p>
+                        <h2>
+                            Redes Socias
+                        </h2>
+                        <div class="redes-footer-menu">
+                            <a href=""><i class="bi bi-whatsapp"></i></a>
+                            <a href=""><i class="bi bi-instagram mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="content3-footer-menu text-center text-lg-start">
+                        <h2 class="text-center text-lg-start">Endereço</h2>
+                        <p class="mb-3">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Av. Sul Gov. Cid Sampaio, 1450b - São José, Recife - PE, 50090-010  
+                        </p>
+                        <a href="https://maps.app.goo.gl/2nigf4jysQ4VspX86" target="_blank">
+                            <i class="bi bi-map-fill"></i>
+                            Ver no mapa
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- 
+        ==================================================================
+                                Footer Copyright
+        ==================================================================
+        -->
+        <div class="container" id="footer-copyright">
+            <div class="row">
+                <div class="col-12 col-lg-6 mb-4">
+                    <div class="content1-footer-copyright text-center">
+                        <p>
+                            © Copyright 2024 - Fênix Cromagem
+                        </p>
+                        <img src="img/logo-footer.png" alt="Logo MV Consultoria">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="content2-footer-copyright text-center">
+                        <p>
+                            Desenvolvido por:
+                        </p>
+                        <img src="img/logo-footer-promova.webp" alt="Logo Promova">
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 

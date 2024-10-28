@@ -16,6 +16,10 @@
     height: 280px;
     background-color: #333333;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: transform 0.3s ease-in-out;
+}
+.content-card-servicos:hover{
+    transform: scale(1.1);
 }
 
 .content-card-servicos img{
