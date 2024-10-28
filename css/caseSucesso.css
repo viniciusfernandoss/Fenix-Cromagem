@@ -1,0 +1,24 @@
+#case-sucesso{
+    font-family: var(--fonte-Poppins);
+}
+
+.content-titulo-case-sucesso h2{
+    font-family: var(--fonte-Poppins);
+    font-weight: 800;
+    color: #F2F2F2;
+    font-size: 3rem;
+}
+
+.btn-saiba-mais-case-sucesso{
+    text-decoration: none;
+    background: linear-gradient(to top right, #ED1C23, #F9AD15);
+    color: white;
+    animation: pulse 1.5s infinite;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.btn-saiba-mais-case-sucesso:hover{
+    background: #0D0D0D;
+    border: 2px solid white;
+} 

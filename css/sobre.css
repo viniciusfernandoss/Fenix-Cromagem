@@ -1,0 +1,32 @@
+#Sobre{
+    color: white;
+    background-color: #0D0D0D;
+}
+
+.titulo1-sobre{
+    color: #f35e18;
+    font-size: 1.2rem;
+}
+
+.titulo2-sobre{
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.content1-sobre a{
+    text-decoration: none;
+    background: linear-gradient(to top right, #ED1C23, #F9AD15);
+    color: white;
+    animation: pulse 1.5s infinite;
+    transition: 0.5s;
+    border: 2px solid transparent;
+}
+.content1-sobre a:hover{
+    background: #1A1A1A;
+    border: 2px solid white;
+}
+#content2-sobre{
+    background-image: url('../img/img-sobre.webp');
+    background-size: cover;
+    background-position: center;
+}

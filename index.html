@@ -4,10 +4,1122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fênix Cromagem</title>
+
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Link Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- Link ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/reveal.js" defer></script>
 </head>
 <body>
-    <h1>
-        Fênix Cromagem
-    </h1>
+
+
+
+    <header>
+        <!-- 
+        ==================================================================
+                        Barra de contatos e informações
+        ==================================================================
+        -->
+        <section class="bg-info-bar d-none d-lg-block">
+            <div class="container py-2" id="info-bar">
+                <div class="content-info-bar d-flex justify-content-between">
+                    <div class="contato-info-bar d-flex align-items-center">
+                        <i class="bi bi-telephone"></i>
+                        <p class="mb-0 me-4 ms-2">
+                            (81) 9 8771-7205
+                        </p>
+                        <i class="bi bi-geo-alt"></i>
+                        <p class="mb-0 me-4 ms-2">
+                            Av. Sul Gov. Cid Sampaio, 1450b - São José, Recife - PE, 50090-010
+                        </p>
+                    </div>
+                    <div class="redes-info-bar d-flex align-items-center">
+                        <a href="" class="me-3"><i class="bi bi-whatsapp"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+        ==================================================================
+                            Barra de Navegações
+        ==================================================================
+        -->
+        <nav class="navbar d-none d-lg-block navbar-expand-lg navbar-light">
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo-header.png" alt="logo Fênix Cromagem">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#perguntasErespostas">Perguntas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#perguntasErespostas">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer-menu">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn-fazer-contato d-none d-lg-inline-block py-3 px-4 rounded-2">
+                    Fazer Contato
+                </a>
+            </div>
+        </nav>
+        <!-- Barra de Navegação Mobile -->
+        <nav class="navbar d-block d-lg-none navbar-expand-lg navbar-light">
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo-header.png" alt="logo Fênix Cromagem">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#perguntasErespostas">Perguntas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#perguntasErespostas">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer-menu">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 
+        ==================================================================
+                                Banner Inicial
+        ==================================================================
+        -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button
+                    class="active"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    aria-current="true"
+                    aria-label="Slide 1">
+                </button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2">
+                </button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3">
+                </button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4">
+                </button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5">
+                </button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6">
+                </button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="6"
+                    aria-label="Slide 7">
+                </button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="7"
+                    aria-label="Slide 8">
+                </button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="8"
+                    aria-label="Slide 9">
+                </button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="9"
+                    aria-label="Slide 10">
+                </button>
+            </div>
+    
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                    src="img/bg-slide1.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-none d-lg-block w-100 img-fluid"
+                >
+                <img
+                    src="img/mobile-bg-slide1.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-block d-lg-none w-100 img-mobile"
+                >
+                <div class="carousel-caption card-animation7 d-flex flex-column text-start justify-content-center">
+                   <h2>
+                        Quem Somos
+                   </h2>
+                   <p class="mt-3 mb-5">
+                        A Fênix Cromagem é especialista em tratamentos de superfície e acabamento de metais. Atendemos indústrias, oficinas mecânicas e designers, oferecendo soluções de alta qualidade em cromagem, niquelagem, e muito mais, com compromisso e excelência.
+                   </p>
+                   <div class="btns-banner-inicial">
+                        <a href="#" class="btn-saiba-mais-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3 me-3">
+                            Saiba Mais
+                        </a>
+                        <a href="#" class="btn-fazer-contato-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3">
+                            Fazer Contato
+                        </a>
+                   </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                    src="img/bg-slide2.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-none d-lg-block w-100 img-fluid"
+                >
+                <img
+                    src="img/mobile-bg-slide2.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-block d-lg-none w-100 img-mobile"
+                >
+                <div class="carousel-caption d-flex flex-column text-start justify-content-center">
+                    <h2>
+                        Cromagem
+                    </h2>
+                    <p class="mt-3 mb-5">
+                        Nós realizamos processos de cromagem que conferem alta resistência à corrosão e um acabamento brilhante e duradouro, ideal para peças automotivas, industriais e decorativas.
+                    </p>
+                    <div class="btns-banner-inicial">
+                         <a href="#" class="btn-saiba-mais-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3 me-3">
+                             Saiba Mais
+                         </a>
+                         <a href="#" class="btn-fazer-contato-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3">
+                             Fazer Contato
+                         </a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                    src="img/bg-slide3.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-none d-lg-block w-100 img-fluid"
+                >
+                <img
+                    src="img/mobile-bg-slide3.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-block d-lg-none w-100 img-mobile"
+                >
+                <div class="carousel-caption d-flex flex-column text-start justify-content-center">
+                    <h2>
+                        Niquelagem
+                    </h2>
+                    <p class="mt-3 mb-5">
+                        Oferecemos serviços de niquelagem que protegem as superfícies metálicas contra desgastes e corrosão, proporcionando um acabamento suave e estético para aplicações diversas.
+                    </p>
+                    <div class="btns-banner-inicial">
+                         <a href="#" class="btn-saiba-mais-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3 me-3">
+                             Saiba Mais
+                         </a>
+                         <a href="#" class="btn-fazer-contato-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3">
+                             Fazer Contato
+                         </a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                    src="img/bg-slide4.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-none d-lg-block w-100 img-fluid"
+                >
+                <img
+                    src="img/mobile-bg-slide4.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-block d-lg-none w-100 img-mobile"
+                >
+                <div class="carousel-caption d-flex flex-column text-start justify-content-center">
+                    <h2>
+                        Oxidação
+                    </h2>
+                    <p class="mt-3 mb-5">
+                        A oxidação pode ser um grande problema para peças metálicas, mas a Fênix Cromagem oferece soluções especializadas para tratar e prevenir esse desgaste. Nosso processo de remoção de oxidação restaura a aparência original das peças, garantindo proteção duradoura e resistência contra novos danos causados por corrosão.
+                    </p>
+                    <div class="btns-banner-inicial">
+                         <a href="#" class="btn-saiba-mais-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3 me-3">
+                             Saiba Mais
+                         </a>
+                         <a href="#" class="btn-fazer-contato-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3">
+                             Fazer Contato
+                         </a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                    src="img/bg-slide5.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-none d-lg-block w-100 img-fluid"
+                >
+                <img
+                    src="img/mobile-bg-slide5.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-block d-lg-none w-100 img-mobile"
+                >
+                <div class="carousel-caption d-flex flex-column text-start justify-content-center">
+                    <h2>
+                        Banho de Ouro
+                    </h2>
+                    <p class="mt-3 mb-5">
+                        Adicione um toque de luxo às suas peças com nosso banho de ouro. Oferecemos revestimentos em ouro com acabamento de alta qualidade, perfeito para itens decorativos e industriais.
+                    </p>
+                    <div class="btns-banner-inicial">
+                         <a href="#" class="btn-saiba-mais-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3 me-3">
+                             Saiba Mais
+                         </a>
+                         <a href="#" class="btn-fazer-contato-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3">
+                             Fazer Contato
+                         </a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                    src="img/bg-slide6.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-none d-lg-block w-100 img-fluid"
+                >
+                <img
+                    src="img/mobile-bg-slide6.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-block d-lg-none w-100 img-mobile"
+                >
+                <div class="carousel-caption d-flex flex-column text-start justify-content-center">
+                    <h2>
+                        Banho de Cobre
+                    </h2>
+                    <p class="mt-3 mb-5">
+                        Nosso banho de cobre oferece alta condutividade e proteção contra a oxidação, com acabamento refinado e durável, ideal para diversas aplicações industriais e decorativas.
+                    </p>
+                    <div class="btns-banner-inicial">
+                         <a href="#" class="btn-saiba-mais-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3 me-3">
+                             Saiba Mais
+                         </a>
+                         <a href="#" class="btn-fazer-contato-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3">
+                             Fazer Contato
+                         </a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                    src="img/bg-slide7.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-none d-lg-block w-100 img-fluid"
+                >
+                <img
+                    src="img/mobile-bg-slide7.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-block d-lg-none w-100 img-mobile"
+                >
+                <div class="carousel-caption d-flex flex-column text-start justify-content-center">
+                    <h2>
+                        Polimento de Metais
+                    </h2>
+                    <p class="mt-3 mb-5">
+                        O polimento de metais da Fênix devolve o brilho e a suavidade às superfícies metálicas, restaurando seu aspecto e proporcionando um acabamento impecável.
+                    </p>
+                    <div class="btns-banner-inicial">
+                         <a href="#" class="btn-saiba-mais-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3 me-3">
+                             Saiba Mais
+                         </a>
+                         <a href="#" class="btn-fazer-contato-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3">
+                             Fazer Contato
+                         </a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                    src="img/bg-slide8.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-none d-lg-block w-100 img-fluid"
+                >
+                <img
+                    src="img/mobile-bg-slide7.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-block d-lg-none w-100 img-mobile"
+                >
+                <div class="carousel-caption d-flex flex-column text-start justify-content-center">
+                    <h2>
+                        Solda em Alumínio e Inox
+                    </h2>
+                    <p class="mt-3 mb-5">
+                        Realizamos soldas em alumínio e inox com precisão e resistência, adequadas para reparos e montagem de estruturas robustas em diversos setores industriais.
+                    </p>
+                    <div class="btns-banner-inicial">
+                         <a href="#" class="btn-saiba-mais-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3 me-3">
+                             Saiba Mais
+                         </a>
+                         <a href="#" class="btn-fazer-contato-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3">
+                             Fazer Contato
+                         </a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                    src="img/bg-slide9.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-none d-lg-block w-100 img-fluid"
+                >
+                <img
+                    src="img/mobile-bg-slide7.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-block d-lg-none w-100 img-mobile"
+                >
+                <div class="carousel-caption d-flex flex-column text-start justify-content-center">
+                    <h2>
+                        Aplicação de Verniz
+                    </h2>
+                    <p class="mt-3 mb-5">
+                        Proteja suas peças metálicas com nossa aplicação de verniz, que oferece uma camada extra de durabilidade e brilho, prevenindo a corrosão e prolongando a vida útil dos materiais.
+                    </p>
+                    <div class="btns-banner-inicial">
+                         <a href="#" class="btn-saiba-mais-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3 me-3">
+                             Saiba Mais
+                         </a>
+                         <a href="#" class="btn-fazer-contato-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3">
+                             Fazer Contato
+                         </a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                    src="img/bg-slide10.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-none d-lg-block w-100 img-fluid"
+                >
+                <img
+                    src="img/mobile-bg-slide7.webp"
+                    alt="Barckground Carrocel 1"
+                    class="d-block d-lg-none w-100 img-mobile"
+                >
+                <div class="carousel-caption d-flex flex-column text-start justify-content-center">
+                    <h2>
+                        Remoção de Ferrugens e Pinturas
+                    </h2>
+                    <p class="mt-3 mb-5">
+                        A Fênix oferece remoção eficaz de ferrugens e pinturas desgastadas, restaurando a aparência e a funcionalidade das peças metálicas com segurança e qualidade.
+                    </p>
+                    <div class="btns-banner-inicial">
+                         <a href="#" class="btn-saiba-mais-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3 me-3">
+                             Saiba Mais
+                         </a>
+                         <a href="#" class="btn-fazer-contato-banner-inicial py-1 px-1 py-lg-2 px-lg-3 rounded-3">
+                             Fazer Contato
+                         </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+            >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+            >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+            </button>
+        </div>  
+    </header>
+
+
+
+    <main>
+        <!-- 
+        ==================================================================
+                            Case de Sucesso
+        ==================================================================
+        -->
+        <div class="container-fluid d-flex flex-column align-items-center my-5" id="case-sucesso">
+            <div class="content-titulo-case-sucesso">
+                <h2 class="text-center">
+                    Faça Contato já!
+                </h2>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-12 p-0">
+                    <img src="img/img-case-sucesso.webp" alt="Case de Sucesso" class="img-fluid d-none d-lg-block">
+                    <img src="img/img-case-sucesso-mobile.webp" alt="Case de Sucesso" class="img-fluid d-block d-lg-none">
+                </div>
+            </div>
+
+            <a href="#" class="btn-saiba-mais-case-sucesso py-3 px-5 rounded-5">
+                Saiba Mais
+            </a>
+
+            <!-- <div class="row d-none d-lg-flex justify-content-center mb-3">
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="content-card-case-sucesso card-animation1 rounded-3 py-3 px-4">
+                        <img src="icons/icone1.png" alt="">
+                        <h4 class="my-3">
+                            Expertise Exclusiva em Saúde
+                        </h4>
+                        <p>
+                            Com anos de experiência focados exclusivamente no setor de saúde, a MV Consultoria tem a expertise necessária para entender e solucionar os desafios únicos enfrentados por clínicas, hospitais, operadoras de saúde e seguradoras. <br><br class="d-none d-xxl-inline-block">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="content-card-case-sucesso card-animation2 rounded-3 py-3 px-4">
+                        <img src="icons/icone2.png" alt="">
+                        <h4 class="my-3">
+                            Soluções Personalizadas
+                        </h4>
+                        <p>
+                            A MV Consultoria oferece soluções sob medida para as necessidades da sua empresa, desde o mapeamento de fluxos de trabalho até o planejamento estratégico, tudo feito com um olhar crítico e profundo para otimizar resultados.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="content-card-case-sucesso card-animation3 rounded-3 py-3 px-4">
+                        <img src="icons/icone3.png" alt="">
+                        <h4 class="my-3">
+                            Know-how de Experts
+                        </h4>
+                        <p>
+                            Nossa equipe conta com especialistas que trazem know-how técnico para a implementação de melhorias e otimização de processos, aumentando a eficiência e a competitividade no mercado. <br><br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="content-card-case-sucesso card-animation4 rounded-3 py-3 px-4">
+                        <img src="icons/icone4.png" alt="">
+                        <h4 class="my-3">
+                            Foco em Resultados
+                        </h4>
+                        <p>
+                            Mais do que consultoria, entregamos soluções práticas que geram resultados mensuráveis. Identificamos gargalos e trabalhamos para eliminá-los, melhorando a performance da sua empresa de forma sustentável.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="content-card-case-sucesso card-animation4 rounded-3 py-3 px-4">
+                        <img src="icons/icone5.png" alt="">
+                        <h4 class="my-3">
+                            Capacitação Especializada
+                        </h4>
+                        <p>
+                            Oferecemos treinamentos especializados, inclusive para públicos com necessidades específicas, como TEA, garantindo que sua equipe esteja preparada para oferecer um atendimento inclusivo e de excelência.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid d-block d-lg-none" id="case-sucesso-mobile">
+                <div class="swiper swiper-case-sucesso-mobile">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="content-card-case-sucesso rounded-3 py-3 px-4">
+                                <img src="icons/icone1.png" alt="">
+                                <h4 class="my-3">
+                                    Expertise Exclusiva em Saúde
+                                </h4>
+                                <p>
+                                    Com anos de experiência focados exclusivamente no setor de saúde, a MV Consultoria tem a expertise necessária para entender e solucionar os desafios únicos enfrentados por clínicas, hospitais, operadoras de saúde e seguradoras.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-card-case-sucesso rounded-3 py-3 px-4">
+                                <img src="icons/icone2.png" alt="">
+                                <h4 class="my-3">
+                                    Soluções Personalizadas
+                                </h4>
+                                <p>
+                                    A MV Consultoria oferece soluções sob medida para as necessidades da sua empresa, desde o mapeamento de fluxos de trabalho até o planejamento estratégico, tudo feito com um olhar crítico e profundo para otimizar resultados.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-card-case-sucesso rounded-3 py-3 px-4">
+                                <img src="icons/icone3.png" alt="">
+                                <h4 class="my-3">
+                                    Know-how de Experts
+                                </h4>
+                                <p>
+                                    Nossa equipe conta com especialistas que trazem know-how técnico para a implementação de melhorias e otimização de processos, aumentando a eficiência e a competitividade no mercado.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-card-case-sucesso rounded-3 py-3 px-4">
+                                <img src="icons/icone4.png" alt="">
+                                <h4 class="my-3">
+                                    Foco em Resultados
+                                </h4>
+                                <p>
+                                    Mais do que consultoria, entregamos soluções práticas que geram resultados mensuráveis. Identificamos gargalos e trabalhamos para eliminá-los, melhorando a performance da sua empresa de forma sustentável.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-card-case-sucesso rounded-3 py-3 px-4">
+                                <img src="icons/icone5.png" alt="">
+                                <h4 class="my-3">
+                                    Capacitação Especializada
+                                </h4>
+                                <p>
+                                    Oferecemos treinamentos especializados, inclusive para públicos com necessidades específicas, como TEA, garantindo que sua equipe esteja preparada para oferecer um atendimento inclusivo e de excelência.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            
+            <div class="container text-center mt-4">
+                <a href="#" class="btn-entrar-em-contato-case-sucesso px-3 py-2 rounded-5 text-center">
+                    Entrar em Contato
+                </a>
+            </div> -->
+            
+        </div>
+
+        <!-- 
+        ==================================================================
+                                    Serviços
+        ==================================================================
+        -->
+        <div class="container py-5" id="servicos">
+            <div class="content-titulo-servicos d-flex flex-column align-items-center mb-3">
+                <div class="titulos-servicos text-center">
+                    <h2 class="titulo1-servicos m-0">
+                        SERVIÇOS
+                    </h2>
+                    <h3 class="titulo2-servicos">
+                        Conheça Nossos Serviços
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row d-none d-lg-flex">
+
+                <div class="col-12 col-lg-3 mb-4">
+                    <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                        <i class="bi bi-copy"></i>
+                        <h4 class="my-2">
+                            Cromagem
+                        </h4>
+                        <p class="mb-4">
+                            Cromagem resistente e durável para peças automotivas, industriais e decorativas.
+                        </p>
+                        <a href="#" class="py-2 px-3 rounded-5">
+                            Entrar em contato
+                        </a>
+                    </div>   
+                </div>
+
+                <div class="col-12 col-lg-3 mb-4">
+                    <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                        <i class="bi bi-aspect-ratio"></i>
+                        <h4 class="my-2">
+                            Niquelagem
+                        </h4>
+                        <p class="mb-4">
+                            Niquelagem protetora e resistente com acabamento liso e atraente.
+                        </p>
+                        <a href="#" class="py-2 px-3 rounded-5">
+                            Entrar em contato
+                        </a>
+                    </div>   
+                </div>
+                
+                <div class="col-12 col-lg-3 mb-4">
+                    <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                        <i class="bi bi-gear"></i>
+                        <h4 class="my-2">
+                            Oxidação
+                        </h4>
+                        <p class="mb-4">
+                            Oxidação resistente para peças metálicas, aumentando durabilidade.
+                        </p>
+                        <a href="#" class="py-2 px-3 rounded-5">
+                            Entrar em contato
+                        </a>
+                    </div>   
+                </div>
+        
+                <div class="col-12 col-lg-3 mb-4">
+                    <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                        <i class="bi bi-stars"></i>
+                        <h4 class="my-2">
+                            Banho de ouro e cobre
+                        </h4>
+                        <p class="mb-4">
+                            Banho de ouro luxuoso e cobre condutor, ideal para aplicações decorativas e industriais.
+                        </p>
+                        <a href="#" class="py-2 px-3 rounded-5">
+                            Entrar em contato
+                        </a>
+                    </div>   
+                </div>
+
+
+                <div class="col-12 col-lg-3 mb-4">
+                    <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                        <i class="bi bi-textarea-resize"></i>
+                        <h4 class="my-2">
+                            Polimento de Metais 
+                        </h4>
+                        <p class="mb-4">
+                            Polimento de metais para restaurar brilho, garantindo acabamento impecável.
+                        </p>
+                        <a href="#" class="py-2 px-3 rounded-5">
+                            Entrar em contato
+                        </a>
+                    </div>   
+                </div>
+
+                <div class="col-12 col-lg-3 mb-4">
+                    <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                        <i class="bi bi-dice-4"></i>
+                        <h4 class="my-2">
+                            Solda em Alumínio
+                        </h4>
+                        <p class="mb-4">
+                            Soldas precisas em alumínio e inox para reparos e montagem de estruturas industriais.
+                        </p>
+                        <a href="#" class="py-2 px-3 rounded-5">
+                            Entrar em contato
+                        </a>
+                    </div>   
+                </div>
+
+                <div class="col-12 col-lg-3 mb-4">
+                    <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                        <i class="bi bi-collection"></i>
+                        <h4 class="my-2">
+                            Aplicação de Verniz
+                        </h4>
+                        <p class="mb-4">
+                            Aplicação de verniz para proteção metálica, aumentando durabilidade e brilho.
+                        </p>
+                        <a href="#" class="py-2 px-3 rounded-5">
+                            Entrar em contato
+                        </a>
+                    </div>   
+                </div>
+
+                <div class="col-12 col-lg-3 mb-4">
+                    <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                        <i class="bi bi-file-break"></i>
+                        <h4 class="my-2">
+                            Remoção de Ferrugem
+                        </h4>
+                        <p class="mb-4">
+                            Remoção de ferrugens e pinturas para restaurar peças metálicas.
+                        </p>
+                        <a href="#" class="py-2 px-3 rounded-5">
+                            Entrar em contato
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="container-fluid d-block d-lg-none" id="servicos-mobile">
+                <div class="swiper swiper-servicos-mobile">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                                <i class="bi bi-copy"></i>
+                                <h4 class="my-2">
+                                    Cromagem
+                                </h4>
+                                <p class="mb-4">
+                                    Cromagem resistente e durável para peças automotivas, industriais e decorativas.
+                                </p>
+                                <a href="#" class="py-2 px-3 rounded-5">
+                                    Entrar em contato
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                                <i class="bi bi-aspect-ratio"></i>
+                                <h4 class="my-2">
+                                    Niquelagem
+                                </h4>
+                                <p class="mb-4">
+                                    Niquelagem protetora e resistente com acabamento liso e atraente.
+                                </p>
+                                <a href="#" class="py-2 px-3 rounded-5">
+                                    Entrar em contato
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                                <i class="bi bi-gear"></i>
+                                <h4 class="my-2">
+                                    Oxidação
+                                </h4>
+                                <p class="mb-4">
+                                    Oxidação resistente para peças metálicas, aumentando durabilidade.
+                                </p>
+                                <a href="#" class="py-2 px-3 rounded-5">
+                                    Entrar em contato
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                                <i class="bi bi-stars"></i>
+                                <h4 class="my-2">
+                                    Banho de ouro e cobre
+                                </h4>
+                                <p class="mb-4">
+                                    Banho de ouro luxuoso e cobre condutor, ideal para aplicações decorativas e industriais.
+                                </p>
+                                <a href="#" class="py-2 px-3 rounded-5">
+                                    Entrar em contato
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                                <i class="bi bi-textarea-resize"></i>
+                                <h4 class="my-2">
+                                    Polimento de Metais 
+                                </h4>
+                                <p class="mb-4">
+                                    Polimento de metais para restaurar brilho, garantindo acabamento impecável.
+                                </p>
+                                <a href="#" class="py-2 px-3 rounded-5">
+                                    Entrar em contato
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                                <i class="bi bi-dice-4"></i>
+                                <h4 class="my-2">
+                                    Solda em Alumínio
+                                </h4>
+                                <p class="mb-4">
+                                    Soldas precisas em alumínio e inox para reparos e montagem de estruturas industriais.
+                                </p>
+                                <a href="#" class="py-2 px-3 rounded-5">
+                                    Entrar em contato
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                                <i class="bi bi-collection"></i>
+                                <h4 class="my-2">
+                                    Aplicação de Verniz
+                                </h4>
+                                <p class="mb-4">
+                                    Aplicação de verniz para proteção metálica, aumentando durabilidade e brilho.
+                                </p>
+                                <a href="#" class="py-2 px-3 rounded-5">
+                                    Entrar em contato
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-card-servicos text-center rounded-3 pb-4 pt-2 px-2">
+                                <i class="bi bi-file-break"></i>
+                                <h4 class="my-2">
+                                    Remoção de Ferrugem
+                                </h4>
+                                <p class="mb-4">
+                                    Remoção de ferrugens e pinturas para restaurar peças metálicas.
+                                </p>
+                                <a href="#" class="py-2 px-3 rounded-5">
+                                    Entrar em contato
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+        ==================================================================
+                                    Sobre
+        ==================================================================
+        -->
+        <div class="container-fluid p-0 m-0" id="Sobre">
+            <div class="row m-0">
+                <div class="col-12 col-lg-6 py-5 px-0">
+                    <div class="content1-sobre px-5 d-flex flex-column justify-content-center">
+                        <div class="content-titulo-sobre d-flex flex-column align-items-start mb-5">
+                            <div class="titulos-sobre">
+                                <h2 class="titulo1-sobre m-0 p-0">
+                                    SOBRE
+                                </h2>
+                                <h3 class="titulo2-sobre">
+                                    Conheça a Fênix Cromagem
+                                </h3>
+                            </div>
+                        </div>
+
+                        <p class="mb-5">
+                            A Fênix Cromagem é uma empresa especializada em tratamentos de superfície e acabamento de metais, oferecendo soluções completas para indústrias, oficinas mecânicas, designers e clientes que buscam qualidade e durabilidade em suas peças. Com serviços que vão desde cromagem e niquelagem até polimento e solda de alumínio e inox, garantimos excelência em cada etapa. Nosso compromisso com a inovação, agilidade e atendimento personalizado nos torna referência no mercado, entregando resultados que valorizam e protegem os projetos de nossos clientes. Trabalhamos com seriedade e dedicação para oferecer o melhor acabamento em metais, sempre focados na durabilidade e na estética superior de cada peça.
+                            <br><br>
+                            Na Fênix Cromagem, a confiança, qualidade e eficiência guiam todas as nossas operações, proporcionando aos nossos clientes um serviço completo e de alta performance.
+                        </p>
+
+                        <div class="btn-fazer-contato-sobre">
+                            <a href="#" class="py-2 px-4 rounded-5">
+                                Fazer Contato
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 p-0 d-none d-lg-block" id="content2-sobre">
+                    <div class="content2-sobre">
+                        <!-- <img src="img/img-sobre.webp" alt="Foto sobre" class="img-fluid"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+        ==================================================================
+                            Perguntas e Respostas
+        ==================================================================
+        -->
+        <div class="container py-5" id="perguntasErespostas">
+            <div class="content-titulo-faq d-flex flex-column align-items-center mb-5">
+                <div class="titulos-faq">
+                    <h2 class="titulo1-faq text-center m-0 p-0">
+                        FAQ
+                    </h2>
+                    <h3 class="titulo2-faq text-center">
+                        Perguntas Frequentes
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="content-faq">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item mt-3 rounded-3">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    O que é cromagem e para que serve?
+                                </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <hr class="mx-3 my-0">
+                                <div class="accordion-body">
+                                    Cromagem é um processo de revestimento de superfícies metálicas com cromo, proporcionando resistência à corrosão, maior durabilidade e um acabamento brilhante e estético.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mt-3 rounded-3">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Quais são os principais benefícios da niquelagem?
+                                </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ipsam a. Perferendis rerum maiores dolores illo? Delectus harum magnam dolore consectetur amet in ab quos. Autem inventore magnam doloribus excepturi?
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mt-3 rounded-3">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Para quais tipos de peças a Fênix oferece polimento de metais?
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ipsam a. Perferendis rerum maiores dolores illo? Delectus harum magnam dolore consectetur amet in ab quos. Autem inventore magnam doloribus excepturi?
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mt-3 rounded-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        Como funciona o serviço de solda em alumínio e inox?
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ipsam a. Perferendis rerum maiores dolores illo? Delectus harum magnam dolore consectetur amet in ab quos. Autem inventore magnam doloribus excepturi?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mt-3 rounded-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        Qual a diferença entre cromagem e banho de ouro?
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ipsam a. Perferendis rerum maiores dolores illo? Delectus harum magnam dolore consectetur amet in ab quos. Autem inventore magnam doloribus excepturi?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mt-3 rounded-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                        O que é oxidação e quando ela é indicada?
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ipsam a. Perferendis rerum maiores dolores illo? Delectus harum magnam dolore consectetur amet in ab quos. Autem inventore magnam doloribus excepturi?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mt-3 rounded-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                        A Fênix remove ferrugem de peças antigas?
+                                    </button>
+                                </h2>
+                                <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ipsam a. Perferendis rerum maiores dolores illo? Delectus harum magnam dolore consectetur amet in ab quos. Autem inventore magnam doloribus excepturi?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mt-3 rounded-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                        Qual é o prazo de entrega dos serviços?
+                                    </button>
+                                </h2>
+                                <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ipsam a. Perferendis rerum maiores dolores illo? Delectus harum magnam dolore consectetur amet in ab quos. Autem inventore magnam doloribus excepturi?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- 
+        ==================================================================
+                                Depoimento
+        ==================================================================
+        -->
+        <section class="bg-feedback" id="feedback">
+            <div class="container">
+                
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+
+
+
+    <!-- Link Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Link Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Link JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>

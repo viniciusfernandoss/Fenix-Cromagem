@@ -1,0 +1,21 @@
+.bg-info-bar{
+    background-color: #0D0D0D;
+    color: white;
+    font-family: var(--fonte-SegoeUi);
+}
+.contato-info-bar .bi{
+    font-size: 1.2rem;
+}
+
+.contato-info-bar p{
+    font-size: 1rem;
+}
+
+
+
+.redes-info-bar a{
+    text-decoration: none;
+    color: #F89A17;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
