@@ -6,16 +6,14 @@
     background-color: white;
     height: 310px;
 }
-
-.content-titulo-feedback{
-    font-family: var(--fonte-Poppins);
-}
 .titulo1-feedback{
+    font-family: var(--fonte-BebasNeue);
     color: #f35e18;
     font-size: 1.2rem;
 }
 .titulo2-feedback{
-    font-weight: 800;
+    font-family: var(--fonte-BebasNeue);
+    font-weight: 500;
     font-size: 3rem;
     color: white;
 }

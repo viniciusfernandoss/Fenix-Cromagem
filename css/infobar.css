@@ -19,3 +19,20 @@
     font-size: 1.2rem;
     font-weight: 300;
 }
+
+.header-top-fixo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+}
+
+#headerr{
+    transition: display 0.3s ease;
+}
+
+@media (max-width: 992px){
+    #headerr{
+        display: none;
+    }
+}

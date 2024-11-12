@@ -1,11 +1,19 @@
 .navbar {
-    background-color: #111111; /* Altere para a cor desejada */
+    background-color: #1A1A1A; /* Altere para a cor desejada */
     color: white;
+
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
+
+.navbar-brand img{
+    width: 75%;
+}
+
+
 
 .nav-link{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: var(--fonte-Poppins);
     font-weight: 500;
     border-bottom: 2px solid transparent;

@@ -1,9 +1,12 @@
+.sessao-inicial{
+    margin-top: 130.2px;
+}
 .carousel-caption{
     top: 0;
 }
 .carousel-caption h2{
-    font-family: var(--fonte-Poppins);
-    font-weight: 800;
+    font-family: var(--fonte-BebasNeue);
+    font-weight: 500;
     font-size: 4rem;
 }
 .carousel-caption p{
@@ -41,6 +44,10 @@
 }
 
 @media (max-width: 992px) {
+    .sessao-inicial{
+        margin-top: 85px;
+    }
+
     .carousel-caption h2{
         font-size: 2rem;
     }

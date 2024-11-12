@@ -1,19 +1,22 @@
 #servicos{
     color: white;
+    height: 100vh;
 }
 
 .titulo1-servicos{
+    font-family: var(--fonte-BebasNeue);
     color: #f35e18;
     font-size: 1.2rem;
 }
 
 .titulo2-servicos{
-    font-weight: 800;
+    font-family: var(--fonte-BebasNeue);
+    font-weight: 500;
     font-size: 3rem;
 } 
 
 .content-card-servicos{
-    height: 280px;
+    height: 230px;
     background-color: #333333;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: transform 0.3s ease-in-out;
@@ -37,6 +40,7 @@
 } 
 
 .content-card-servicos a{
+    font-size: 1rem;
     text-decoration: none;
     background: linear-gradient(to top right, #ED1C23, #F9AD15);
     color: white;
@@ -63,4 +67,11 @@
 }
 .swiper-pagination-bullet-active {
     background-color: #f35e18;
+}
+
+@media (max-width: 992px){
+    #servicos{
+        margin-top: 50px;
+        height: 50vh;
+    }
 }
